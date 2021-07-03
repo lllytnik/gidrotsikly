@@ -1,5 +1,24 @@
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Main } from './pages/Main/Main';
+import { JetSkis } from './pages/JetSkis/JetSkis';
+import { JetSki } from './pages/JetSki/JetSki';
+
 function App() {
-  return <div className="App">Hello world!</div>;
+  return (
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/">
+          <Main />
+        </Route>
+        <Route exact path="/jet-skis">
+          <JetSkis />
+        </Route>
+        <Route exact path="/jet-skis/:id">
+          <JetSki />
+        </Route>
+      </Switch>
+    </BrowserRouter>
+  );
 }
 
 export default App;
