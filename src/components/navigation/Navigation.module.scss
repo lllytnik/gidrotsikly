@@ -1,0 +1,42 @@
+@import '../../assets/scss/mixins.scss';
+@import '../../assets/scss/vars.scss';
+
+.navBottom {}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    background-color: $baseColor;
+    padding: 15px 2px 14px 2px;
+}
+
+.item {
+    list-style: none;
+}
+
+.linkItem {
+    position: relative;
+    text-decoration: none;
+    font-family: 'SFProDisplay-Medium';
+    @include font (20px, 400, 24px, $textPrimary);
+
+    &:after {
+        display: block;
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background-color: $accentColor;
+        content: "";
+        transition: width 0.3s ease-out;
+    }
+
+    &:hover:after {
+        width: 100%;
+    }
+
+    &:hover {
+        font-weight: 600;
+    }
+}

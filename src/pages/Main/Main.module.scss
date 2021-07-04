@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Barlow-Bold';
+    src: local('Barlow-Bold'), url(../../assets/fonts/barlow/Barlow-Bold.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Barlow-Regular';
+    src: local('Barlow-Regular'), url(../../assets/fonts/barlow/Barlow-Regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Barlow-SemiBold';
+    src: local('Barlow-SemiBold'), url(../../assets/fonts/barlow/Barlow-SemiBold.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'ProximaNova-Bold';
+    src: local('ProximaNova-Bold'), url(../../assets/fonts/proxima-nova/ProximaNova-Bold.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'ProximaNova-Semibold';
+    src: local('ProximaNova-Semiboldr'), url(../../assets/fonts/proxima-nova/ProximaNova-Semibold.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'SFProDisplay-Bold';
+    src: local('SFProDisplay-Bold'), url(../../assets/fonts/sfp-ro-display/SFProDisplay-Bold.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'SFProDisplay-Medium';
+    src: local('SFProDisplay-Medium'), url(../../assets/fonts/sfp-ro-display/SFProDisplay-Medium.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'SFProDisplay-Regular';
+    src: local('SFProDisplay-Regular'), url(../../assets/fonts/sfp-ro-display/SFProDisplay-Regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'SFProDisplay-Semibold';
+    src: local('SFProDisplay-Semibold'), url(../../assets/fonts/sfp-ro-display/SFProDisplay-Semibold.woff) format('woff');
+}
+
+.container {
+    max-width: 1171px;
+    margin: 0 auto;
+}
