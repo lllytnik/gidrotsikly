@@ -1,0 +1,101 @@
+@import '../../assets/scss/mixins.scss';
+@import '../../assets/scss/vars.scss';
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    min-height: 112px;
+}
+
+.nav {
+    max-width: 454px;
+    width: 100%;
+
+    &List {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    &Link {
+        text-decoration: none;
+        font-family: 'SFProDisplay-Bold';
+        @include font (20px, 700, 24px, $textPrimary);
+    }
+}
+
+.logo {
+    /* position: absolute;
+    transform: translateX(-50%);
+    left: 50%; */
+}
+
+.location {
+    padding-left: 28px;
+
+    &Link {
+        position: relative;
+        text-decoration: none;
+        font-family: 'SFProDisplay-Bold';
+        @include font (20px, 700, 24px, $textPrimary);
+
+        &::before {
+            content: '';
+            width: 26px;
+            height: 30px;
+            top: -10px;
+            left: -30px;
+            position: absolute;
+            background: url('../../assets/images/header/location-icon.svg');
+        }
+    }
+
+}
+
+
+.profile {
+    max-width: 112px;
+    width: 100%;
+    position: relative;
+
+    &List {
+        padding: 0;
+        margin: 0;
+        display: flex;
+
+        justify-content: space-between;
+        list-style: none;
+
+
+    }
+
+    &Item {
+        &:last-child {
+            padding-right: 15px;
+        }
+    }
+
+    &Quantity {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 8px;
+        right: 0;
+        font-family: 'SFProDisplay-Regular';
+        @include font (10px, 500, 11px, $textLite);
+        background-color: $accentColor;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+}
