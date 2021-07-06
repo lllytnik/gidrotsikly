@@ -13,7 +13,7 @@ function Header() {
                     <li className={s.navItem}><a className={s.navLink} href="#!">Доставка и оплата</a></li>
                 </ul>
             </nav>
-            <img className={s.logo} src={logo} alt="logo" />
+            <a className={s.likeLogo} href="#!"><img className={s.logo} src={logo} alt="logo" /></a>
             <div className={s.location}>
                 <a className={s.locationLink} href="#!">Москва,  ул. Науки  25</a>
 
