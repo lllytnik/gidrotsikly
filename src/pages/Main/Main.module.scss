@@ -43,7 +43,23 @@
     src: local('SFProDisplay-Semibold'), url(../../assets/fonts/sfp-ro-display/SFProDisplay-Semibold.woff) format('woff');
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     max-width: 1171px;
     margin: 0 auto;
+}
+
+.inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 0 70px 0;
 }
