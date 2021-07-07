@@ -6,12 +6,19 @@ import basket from '../../assets/images/icons/basket-icon.svg'
 export const PopularProductCard = (props) => {
     return (
     <div className={s.product}>
-        <img className={s.productImg} src={props.img} alt="product" />
+        <img className={s.productImg} src={backpack} alt="product" />
         <p className={s.productName}>{props.name}</p>
-        <span className={s.productPrice}>{props.price}</span>
-        <button className={s.productBtn}>
+        <div className={s.productIs}>
+            <span className={s.productPrice}>{props.price}</span>
+            <button className={s.productIsBtn}>
             <img src={basket} alt="basket" />
-        </button>
+            </button>
+        </div>
+        <div className={s.productNo}>
+            <span className={s.productNoText}>нет в наличии</span>
+            <button className={s.productNoBtn}>Сообщить о поступлении</button>
+        </div>
+        <button className={s.productBtn}>Посмотреть товар</button>
     </div>
     );
 };
