@@ -1,0 +1,25 @@
+.tabs {
+
+    &Link {
+        padding: 10px 0px;
+        border: none;
+        cursor: pointer;
+        background: transparent;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+    }
+
+    &Link:focus {
+        border-bottom: 2px solid #1C62CD;
+    }
+
+    &Link:hover {
+        border-bottom: 2px solid #1C62CD;
+    }
+
+    &Link + .tabsLink {
+        margin-left: 50px;
+    }
+}
