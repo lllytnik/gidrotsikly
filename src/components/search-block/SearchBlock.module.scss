@@ -1,0 +1,62 @@
+@import '../../assets/scss/mixins.scss';
+@import '../../assets/scss/vars.scss';
+
+.searchBlock {
+    min-height: 200px;
+}
+
+.searchResult {
+    position: relative;
+
+}
+
+.btnChoice {
+    padding: 11px 26px;
+    font-family: 'SFProDisplay-Medium';
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    @include font (20px, 400, 23px, $textPrimary);
+
+    &:hover {
+        background-color: $baseColor;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+}
+
+.inputRusult {
+    width: 100%;
+    height: 50px;
+    margin-top: 25px;
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    background-color: $baseColor;
+    font-family: 'SFProDisplay-Regular';
+    @include font (16px, 400, 19px, $textPrimary);
+}
+
+.btnhRusult {
+    width: 145px;
+    height: 50px;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 25px;
+    color: $textLite !important;
+    background-color: $accentColor;
+    text-transform: uppercase;
+    font-family: 'SFProDisplay-Regular';
+    @include font(14px, 400, 16px, $textPrimary);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
