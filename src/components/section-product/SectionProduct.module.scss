@@ -1,0 +1,6 @@
+.sectionProduct {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding: 43px 0 43px 0;
+}

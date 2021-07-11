@@ -1,0 +1,44 @@
+@import '../../assets/scss/mixins.scss';
+@import '../../assets/scss/vars.scss';
+
+.product {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    border: 1px solid $colorLite;
+    width: 370px;
+    padding: 18px 37px 7px 22px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.inner {
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    margin: 0 0 30px;
+    font-family: 'Barlow-Regular';
+    @include font (23px, 700, 27px, $textPrimary);
+}
+
+.link {
+    position: relative;
+    text-decoration: none;
+    font-family: 'SFProDisplay-Regular';
+    @include font (14px, 400, 16px, $colorLite);
+
+    &::before {
+        content: '';
+        width: 6px;
+        height: 9px;
+        top: 5px;
+        right: -10px;
+        position: absolute;
+        background: url('../../assets/images/product/arrow.svg') no-repeat;
+    }
+}
