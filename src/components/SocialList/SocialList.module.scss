@@ -1,0 +1,13 @@
+.socialBar {
+    align-self: center;
+    
+    &Items {
+        display: flex;
+        list-style-type: none;
+    }
+
+    &Item + .socialBarItem {
+        margin-left: 30px;
+    }
+
+}

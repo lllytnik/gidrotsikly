@@ -1,108 +1,17 @@
 .footer {
+    
     background-color: #F0F0F4;
     padding: 43px 0 22px;
 
-    &Container{
-        max-width: 1170px;
+    &Container {
         margin: 0 auto;
+        max-width: 1170px;
     }
 
     &Top {
         display: flex;
         justify-content: space-between;
-        
+        align-items: flex-start;
     }
 
-    &Form {
-        margin-top: 0px;
-    }
-
-    &Input {
-        margin-top: 35px;
-        padding: 8px 65px 8px 12px;
-        border: none;
-    }
-
-    &Input::placeholder {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 17px;
-        color: rgba(196, 196, 196, 1);
-
-    }
-
-    &Btn {
-        border: none;
-        padding: 9px 16px 8px;
-        cursor: pointer;
-        background-color: #1C62CD;
-        font-size: 11px;
-        font-weight: 600;
-        line-height: 13px;
-        letter-spacing: 0.12em;
-        color: white;
-    }
-
-    &Info {
-        display: flex;
-        flex-direction: column;
-    }
-
-    &Shop {
-        display: flex;
-        flex-direction: column;
-    }
-
-    &Social {
-        display: flex;
-        align-self: center;
-    }
-
-    &SocialLink + .footerSocialLink {
-        margin-left: 30px;
-    }
-
-    &FormTitle {
-        margin: 0;
-        max-width: 215px;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 17px;
-    }
-
-    &Title {
-        margin: 0px 0px 10px;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 17px;
-        color: rgba(47, 48, 53, 1);
-    }
-
-    &Link {
-        font-size: 14px;
-        font-weight: 400;
-        text-decoration: none;
-        color: rgba(47, 48, 53, 1);
-    }
-
-    &Link + .footerLink {
-        margin-top: 5px;
-    }
-
-    &Bottom {
-        margin-top: 45px;
-        text-align: center;
-    }
-
-    &BottomLink {
-        text-decoration: none;
-        font-size: 10px;
-        font-weight: 400;
-        line-height: 12px;
-        color: rgba(72, 73, 77, 1);
-    }
-
-    &BottomLink + .footerBottomLink {
-        margin-left: 80px;
-    }
 }

@@ -1,0 +1,27 @@
+.infoLinksList {
+    
+    &Title {
+        margin: 0;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        color: rgba(47, 48, 53, 1);
+
+    }
+
+    &Items {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    &Item {
+        
+    }
+
+    &Link {
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 17px;
+        color: rgba(47, 48, 53, 1);
+    }
+}
