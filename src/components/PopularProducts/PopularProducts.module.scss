@@ -1,0 +1,11 @@
+.popularProducts {
+    &Container {
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+    &CardWrap {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
