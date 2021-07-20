@@ -1,0 +1,23 @@
+@import '../../assets/scss/mixins.scss';
+@import '../../assets/scss/vars.scss';
+
+.location {
+    padding-left: 28px;
+
+    &Link {
+        position: relative;
+        text-decoration: none;
+        font-family: 'SFProDisplay-Bold';
+        @include font (20px, 700, 24px, $textPrimary);
+
+        &::before {
+            content: '';
+            width: 26px;
+            height: 30px;
+            top: -10px;
+            left: -30px;
+            position: absolute;
+            background: url('../../assets/images/header/location-icon.svg');
+        }
+    }
+}

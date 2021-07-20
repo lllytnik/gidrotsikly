@@ -1,0 +1,42 @@
+@import '../../assets/scss/mixins.scss';
+@import '../../assets/scss/vars.scss';
+
+.profile {
+    max-width: 112px;
+    width: 100%;
+    position: relative;
+
+    &List {
+        padding: 0;
+        margin: 0;
+        display: flex;
+
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    &Item {
+        &:last-child {
+            padding-right: 15px;
+        }
+    }
+
+    &Quantity {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 8px;
+        right: 0;
+        font-family: 'SFProDisplay-Regular';
+        @include font (10px, 500, 11px, $textLite);
+        background-color: $accentColor;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+}

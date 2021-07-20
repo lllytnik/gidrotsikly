@@ -13,6 +13,7 @@
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
+
 }
 
 .inner {
@@ -24,6 +25,10 @@
     margin: 0 0 30px;
     font-family: 'Barlow-Regular';
     @include font (23px, 700, 27px, $textPrimary);
+
+    &:hover {
+        color: $accentColor;
+    }
 }
 
 .link {

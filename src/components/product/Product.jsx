@@ -1,6 +1,5 @@
 import s from './Product.module.scss';
 
-import { prop } from 'dom7';
 function Product(props) {
     return (
         <div className={s.product}>
