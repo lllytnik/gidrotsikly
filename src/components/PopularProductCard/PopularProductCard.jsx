@@ -1,24 +1,34 @@
-import s from '../../components/PopularProductCard/PopularProductCard.module.scss';
-import { NavLink } from 'react-router-dom';
+import {
+  product,
+  productBtn,
+  productImg,
+  productName,
+  productPrice,
+  productIs,
+  productIsBtn,
+  productNo,
+  productNoText,
+  productNoBtn,
+} from '../../components/PopularProductCard/PopularProductCard.module.scss';
 import backpack from '../../assets/images/goods/equipment/backpack.png';
-import basket from '../../assets/images/icons/basket-icon.svg'
+import basket from '../../assets/images/icons/basket-icon.svg';
 
-export const PopularProductCard = (props) => {
-    return (
-    <div className={s.product}>
-        <img className={s.productImg} src={backpack} alt="product" />
-        <p className={s.productName}>{props.name}</p>
-        <div className={s.productIs}>
-            <span className={s.productPrice}>{props.price}</span>
-            <button className={s.productIsBtn}>
-            <img src={basket} alt="basket" />
-            </button>
-        </div>
-        <div className={s.productNo}>
-            <span className={s.productNoText}>нет в наличии</span>
-            <button className={s.productNoBtn}>Сообщить о поступлении</button>
-        </div>
-        <button className={s.productBtn}>Посмотреть товар</button>
+export const PopularProductCard = ({ name, price }) => {
+  return (
+    <div className={product}>
+      <img src={backpack} alt="image" />
+      <p className={productName}>{name}</p>
+      <div className={productIs}>
+        <span className={productPrice}>{price}</span>
+        <button className={productIsBtn}>
+          <img src={basket} alt="basket" />
+        </button>
+      </div>
+      <div className={productNo}>
+        <span className={productNoText}>нет в наличии</span>
+        <button className={productNoBtn}>Сообщить о поступлении</button>
+      </div>
+      <button className={productBtn}>Посмотреть товар</button>
     </div>
-    );
+  );
 };
