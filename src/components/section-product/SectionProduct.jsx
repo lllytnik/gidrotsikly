@@ -1,5 +1,5 @@
 import s from './SectionProduct.module.scss';
-import Product from '../product/Product';
+import { Product } from '../product/Product';
 
 import productImg from '../../assets/images/product/pic1.png';
 import productImg2 from '../../assets/images/product/pic2.png';

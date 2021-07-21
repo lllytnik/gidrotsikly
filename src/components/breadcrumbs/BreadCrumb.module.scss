@@ -1,0 +1,10 @@
+@import '../../assets/scss/mixins.scss';
+@import '../../assets/scss/vars.scss';
+
+
+
+.navLink {
+    text-decoration: none;
+    font-family: 'SFProDisplay-Bold';
+    @include font (20px, 700, 24px, $textPrimary);
+}

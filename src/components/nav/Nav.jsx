@@ -1,7 +1,7 @@
 import s from './Nav.module.scss';
 import { NavLink } from '../nav-link/NavLink';
 
-export const Nav = (props) => {
+export const Nav = () => {
   return (
     <nav className={s.nav}>
       <ul className={s.navList}>

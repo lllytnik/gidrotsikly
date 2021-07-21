@@ -14,6 +14,10 @@
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
 
+    &:hover {
+        box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    }
+
 }
 
 .inner {
@@ -23,7 +27,7 @@
 
 .title {
     margin: 0 0 30px;
-    font-family: 'Barlow-Regular';
+    font-family: 'ProximaNova-Bold';
     @include font (23px, 700, 27px, $textPrimary);
 
     &:hover {
