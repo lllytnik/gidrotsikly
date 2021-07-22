@@ -1,0 +1,9 @@
+@import '../../assets/scss/mixins.scss';
+@import '../../assets/scss/vars.scss';
+
+
+.linkTitle {
+    text-decoration: none;
+    font-family: 'SFProDisplay-Bold';
+    @include font (30px, 700, 35px, $textPrimary);
+}

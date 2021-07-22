@@ -1,0 +1,17 @@
+@import '../../assets/scss/mixins.scss';
+@import '../../assets/scss/vars.scss';
+
+.select {
+    width: 178px;
+    height: 33px;
+    padding: 8px 20px;
+    font-family: 'SFProDisplay-Regular';
+    @include font (14px, 400, 16px, $textPrimary);
+    border: 1px solid #D7D9DF;
+    height: 34px;
+    background: url('../../assets/images/select/select-arrow.svg') no-repeat right;
+    -webkit-appearance: none;
+    background-position-x: 145px;
+    background-position-y: 13px;
+
+}

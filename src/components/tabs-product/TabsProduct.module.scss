@@ -1,0 +1,21 @@
+@import '../../assets/scss/mixins.scss';
+@import '../../assets/scss/vars.scss';
+
+.tabsItem{
+    margin-right: 8px;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+.tabsLink{
+    padding: 4px 22px;
+    background-color: $baseColor;
+    text-decoration: none;
+    font-family: 'SFProDisplay-Regular';
+    @include font(14px,400,16px,$textPrimary);
+    border-radius:3px ;
+    -webkit-border-radius:3px ;
+    -moz-border-radius:3px ;
+    -ms-border-radius:3px ;
+    -o-border-radius:3px ;
+}
