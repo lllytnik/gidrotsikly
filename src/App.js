@@ -4,8 +4,7 @@ import { JetSkis } from './pages/JetSkis/JetSkis';
 import { JetSki } from './pages/JetSki/JetSki';
 
 function App() {
-  return <JetSkis />;
-  /* (
+  return (
     <BrowserRouter>
       <Switch>
         <Route exact path="/">
@@ -19,7 +18,7 @@ function App() {
         </Route>
       </Switch>
     </BrowserRouter>
-  ); */
+  );
 }
 
 export default App;
