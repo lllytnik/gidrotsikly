@@ -1,0 +1,17 @@
+@import '../../assets/scss/mixins.scss';
+@import '../../assets/scss/vars.scss';
+
+.toggleButtons{
+    width: 58px;
+    height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn{
+    border:none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+}
