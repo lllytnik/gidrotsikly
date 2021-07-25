@@ -6,12 +6,13 @@ import {
 } from '../../components/PopularProducts/PopularProducts.module.scss';
 import { PopularProductCard } from '../PopularProductCard/PopularProductCard';
 import { ProductTabs } from '../../components/ProductTabs/ProductTabs';
+import { Title } from '../Title/Title';
 
 export const PopularProducts = () => {
   return (
     <section className={popularProducts}>
       <div className={popularProductsContainer}>
-        <h2 className={popularProductsTitle}>Популярные товары</h2>
+        <Title title="Популярные товары" />
         <ProductTabs
           items={[
             { name: 'запчасти' },
