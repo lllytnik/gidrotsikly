@@ -1,6 +1,6 @@
 import { body } from '../Main/Main.module.scss';
-import { ProductCardTable } from '../../components/ProductCardTable/ProductCardTable';
+import { SearchShop } from '../../components/SearchShop/SearchShop';
 
 export const Main = () => {
-  return <ProductCardTable />;
+  return <SearchShop />;
 };
