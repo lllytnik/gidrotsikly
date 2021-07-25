@@ -1,11 +1,46 @@
 table {
-  border: 1px solid black;
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 1px solid rgba(47, 48, 53, 0.1)
+}
+
+tr:first-child {
+  border-bottom: none;
 }
 
 th {
-  border: 1px solid black;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(47, 48, 53, 1);
 }
 
 td {
-  border: 1px solid black;
+  padding: 20px 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(47, 48, 53, 1);
+}
+
+tr td:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+button {
+  padding: 10px 40px;
+  border: none;
+  background: rgba(28, 98, 205, 1);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 1);
 }
