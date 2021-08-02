@@ -17,10 +17,10 @@ export const productCard = [
     ''
   ),
   new ProductCard(
-    'Спасательный жилет',
+    'Спасательный жилет BRP Mens Airflow PFD',
     LifeVest,
-    '',
     '6900₽',
+    '',
     true,
     true,
     '',
@@ -30,7 +30,7 @@ export const productCard = [
   new ProductCard(
     'BRP Audio-Premium System',
     brpAudioPremiumSysem,
-    '6900₽',
+    '68000₽',
     '',
     true,
     false,
@@ -44,7 +44,7 @@ export const productCard = [
     '',
     '',
     false,
-    false,
+    true,
     '',
     '',
     ''

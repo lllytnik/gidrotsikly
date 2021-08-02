@@ -1,34 +1,53 @@
 import {
   product,
-  productBtn,
+  productBtnHover,
+  productImgWrap,
   productImg,
+  productAvailable,
   productName,
   productPrice,
-  productIs,
-  productIsBtn,
-  productNo,
-  productNoText,
-  productNoBtn,
+  basketBtn,
+  productSale,
+  productNotAvailable,
+  productNotAvailableText,
+  productBtnReport,
 } from '../../components/PopularProductCard/PopularProductCard.module.scss';
-import backpack from '../../assets/images/goods/equipment/backpack.png';
 import basket from '../../assets/images/icons/basket-icon.svg';
 
-export const PopularProductCard = ({ name, price }) => {
+export const PopularProductCard = ({
+  name,
+  photo,
+  price,
+  salePrice,
+  isAvailable,
+  isOnSale,
+  producer,
+  productNum,
+  rating,
+}) => {
   return (
     <div className={product}>
-      <img src={backpack} alt="image" />
-      <p className={productName}>{name}</p>
-      <div className={productIs}>
-        <span className={productPrice}>{price}</span>
-        <button className={productIsBtn}>
-          <img src={basket} alt="basket" />
-        </button>
+      <button className={productBtnHover}>Посмотреть товар</button>
+      {isOnSale && <span className={productSale}>sale</span>}
+      <div className={productImgWrap}>
+        <img className={productImg} src={photo} alt={name} />
       </div>
-      <div className={productNo}>
-        <span className={productNoText}>нет в наличии</span>
-        <button className={productNoBtn}>Сообщить о поступлении</button>
+      <div className={isAvailable ? productAvailable : productNotAvailable}>
+        <h4 className={productName}>{name}</h4>
       </div>
-      <button className={productBtn}>Посмотреть товар</button>
+      {isAvailable ? (
+        <>
+          <span className={productPrice}>{price}</span>
+          <button className={basketBtn}>
+            <img src={basket} />
+          </button>
+        </>
+      ) : (
+        <>
+          <span className={productNotAvailableText}>нет в наличии</span>
+          <button className={productBtnReport}>Сообщить о поступлении</button>
+        </>
+      )}
     </div>
   );
 };

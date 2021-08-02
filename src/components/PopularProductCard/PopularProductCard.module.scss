@@ -1,108 +1,137 @@
 .product {
+   min-height: 403px;
+   min-width: 271px;
+   border: 1px solid rgba(205, 205, 205, 1);
+   border-radius: 3px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   position: relative;
+   
+
+   &:hover {
+       cursor: pointer;
+       box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+   }
+   
+   &:hover .productBtnHover{
+    display: block;
     cursor: pointer;
-    position: relative;
-    border: 1px solid #CDCDCD;
-    border-radius: 3px;
-    max-width: 270px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    &:hover {
-        box-shadow: 0px 0px 20px rgba(50, 50, 50, 0.25);
-        color: rgba(28, 98, 205, 1);
     }
-
-    &:hover .productBtn {
-        display: block;
-    }
-
-    &::after {
-        display: block;
-        content: "";
+   &Sale {
+        display: inline-block;
         position: absolute;
-        height: 22px;
-        width: 24px;
-        background: url(../../assets/images/icons/heart-icon.svg) no-repeat;
-        top: 16px;
-        right: 19px;
+        top: 0px;
+        left: 0px;
+        height: 63px;
+        width: 25px;
+        background:#1C62CD;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0.07em;
+        color: white;
+    }
+
+    &ImgWrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 250px;
     }
 
     &Img {
-        margin: 52px 35px 0px;
+       margin-top: 50px;
     }
-
+    &Available {
+       text-align: center;
+       justify-content: flex-end;
+    }
     &Name {
-        margin: 14px 0px 0px;
-        max-width: 170px;
+        text-align: center;
+        margin-top: 10px;
         font-size: 18px;
         font-weight: 400;
         line-height: 21px;
-        text-align: center;
+        letter-spacing: 0em;
+        max-width: 185px;
     }
-
     &Price {
+        display: inline-block;
         margin-top: 25px;
         font-size: 30px;
         font-weight: 700;
         line-height: 36px;
     }
-
-    &Btn {
-        display: none;
-        top:120px;
-        padding: 18px 21px;
+    &Sale {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: absolute;
-        cursor: pointer;
-        border: none;
-        background: #FFFFFF;
-        opacity: 0.9;
-        font-size: 15px;
+        top: 0px;
+        left: 0px;
+        width: 63px;
+        height: 25px;
+        background: rgba(28, 98, 205, 1);
+        color: white;
+        font-size: 12px;
         font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0em;
+        line-height: 14px;
+        letter-spacing: 0.07em;
         text-transform: uppercase;
-        box-shadow: 0px 0px 15px rgba(50, 50, 50, 0.25);
     }
-
-    &Is {
+    &NotAvailable {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    &IsBtn {
-        border: none;
-        border-top-left-radius: 10px;
-        cursor: pointer;
-        align-self: flex-end;
-        padding: 10px 16px 7.5px 14px;
-        background: #1C62CD;
-    }
-
-    &No {
-        display: none;
-        flex-direction: column;
+        justify-content: flex-start;
         align-items: center;
     }
-
-    &NoText {
-        margin-top: 13px;
+    &NotAvailableText {
         font-size: 18px;
         font-weight: 700;
-        line-height: 21px;
+        line-height: 21px;   
     }
-
-    &NoBtn {
-        margin-top: 13px;
-        cursor: pointer;
-        border: none;
-        background: transparent;
-        text-decoration: underline;
-        color: rgba(28, 98, 205, 1);
+    &BtnReport {
+        margin-top: 15px;
         font-size: 16px;
         font-weight: 400;
         line-height: 19px;
+        color: rgba(28, 98, 205, 1);
+        text-decoration: underline;
+        background: transparent;
+        border: none;
     }
+
+    &BtnHover {
+        display: none;
+        position: absolute;
+        top: 120px;
+        height: 60px;
+        width: 230px;
+        border: none;
+        border-radius: 3px;
+        background: #FFF;
+        opacity: 0.9;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #2F3035;
+    }
+}
+
+.basketBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom:0;
+    right: 0;
+    width: 60px;
+    height: 40px;
+    border: none;
+    background-color: rgba(28, 98, 205, 1);
+    border-top-left-radius: 10px;
 }

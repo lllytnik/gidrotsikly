@@ -1,14 +1,14 @@
-import s from '../../components/ProductTabs/ProductTabs.module.scss';
+import {
+  tabs,
+  tabsLink,
+} from '../../components/ProductTabs/ProductTabs.module.scss';
 
-export const ProductTabs = () => {
+export const ProductTabs = ({ items }) => {
   return (
-    <div className={s.tabs}>
-      <button className={s.tabsLink}>запчасти</button>
-      <button className={s.tabsLink}>моторы</button>
-      <button className={s.tabsLink}>шины</button>
-      <button className={s.tabsLink}>электроника</button>
-      <button className={s.tabsLink}>инструменты</button>
-      <button className={s.tabsLink}>аксессуары</button>
+    <div className={tabs}>
+      {items.map(({ name }) => (
+        <button className={tabsLink}>{name}</button>
+      ))}
     </div>
   );
 };
