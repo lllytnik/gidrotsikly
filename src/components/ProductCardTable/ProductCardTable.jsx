@@ -1,5 +1,5 @@
 import { table } from '../../components/ProductCardTable/ProductCardTable.module.scss';
-export const ProductCardTable = () => {
+export const ProductCardTable = ({ props }) => {
   return (
     <table>
       <tr>
@@ -8,62 +8,26 @@ export const ProductCardTable = () => {
         <th>Доступно</th>
         <th colspan="2">Количество</th>
       </tr>
-      <tr>
-        <td>Москва, ул. Науки 25</td>
-        <td>
-          пн-сб: <br></br> вс:
-        </td>
-        <td>
-          08:00-19:00 <br></br> 09:00-17:00
-        </td>
-        <td>В наличии</td>
-        <td>1</td>
-        <td>
-          <button>Купить</button>
-        </td>
-      </tr>
-      <tr>
-        <td>Москва, ул. Южная 134</td>
-        <td>
-          пн-сб: <br></br> вс:
-        </td>
-        <td>
-          08:00-19:00 <br></br> 09:00-17:00
-        </td>
-        <td>В наличии</td>
-        <td>2</td>
-        <td>
-          <button>Купить</button>
-        </td>
-      </tr>
-      <tr>
-        <td>Санкт-Петербург, ул. Красная 19</td>
-        <td>
-          пн-сб: <br></br> вс:
-        </td>
-        <td>
-          08:00-19:00 <br></br> 09:00-17:00
-        </td>
-        <td>Нет в наличии</td>
-        <td>0</td>
-        <td>
-          <button>Купить</button>
-        </td>
-      </tr>
-      <tr>
-        <td>Киев, ул Шевченко 167</td>
-        <td>
-          пн-сб: <br></br> вс:
-        </td>
-        <td>
-          08:00-19:00 <br></br> 09:00-17:00
-        </td>
-        <td>Нет в наличии</td>
-        <td>0</td>
-        <td>
-          <button>Купить</button>
-        </td>
-      </tr>
+      {props.map(({ name, openingTime, isAvailable, quantity, goodId }) => (
+        <tr>
+          <td>{name}</td>
+          <td>
+            {openingTime.fulltime.days}
+            <br></br>
+            {openingTime.partTime.days}
+          </td>
+          <td>
+            {openingTime.fulltime.time}
+            <br></br>
+            {openingTime.partTime.time}
+          </td>
+          <td>{isAvailable}</td>
+          <td>{quantity}</td>
+          <td>
+            <button id={goodId}>Купить</button>
+          </td>
+        </tr>
+      ))}
     </table>
   );
 };

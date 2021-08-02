@@ -13,7 +13,7 @@ function App() {
         <Route exact path="/jet-skis">
           <JetSkis />
         </Route>
-        <Route exact path="/jet-skis/:id">
+        <Route exact path="/jet-ski">
           <JetSki />
         </Route>
       </Switch>

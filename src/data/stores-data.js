@@ -1,4 +1,4 @@
-import { StoreForGood } from '../models/StoreModel';
+import { StoreForGood } from '../models/StoreForGoodModel';
 
 const workTime = {
   fulltime: {

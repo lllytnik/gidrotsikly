@@ -8,7 +8,7 @@ import { PopularProductCard } from '../PopularProductCard/PopularProductCard';
 import { ProductTabs } from '../../components/ProductTabs/ProductTabs';
 import { Title } from '../Title/Title';
 
-export const PopularProducts = () => {
+export const PopularProducts = ({ productCard }) => {
   return (
     <section className={popularProducts}>
       <div className={popularProductsContainer}>
@@ -24,10 +24,31 @@ export const PopularProducts = () => {
           ]}
         />
         <div className={popularProductsCardWrap}>
-          <PopularProductCard name="Водонепроницаемый рюкзак" price="9800" />
-          <PopularProductCard />
-          <PopularProductCard />
-          <PopularProductCard />
+          {productCard.map(
+            ({
+              name,
+              photo,
+              price,
+              salePrice,
+              isAvailable,
+              isOnSale,
+              producer,
+              productNum,
+              rating,
+            }) => (
+              <PopularProductCard
+                name={name}
+                photo={photo}
+                price={price}
+                salePrice={salePrice}
+                isAvailable={isAvailable}
+                isOnSale={isOnSale}
+                producer={producer}
+                productNum={productNum}
+                rating={rating}
+              />
+            )
+          )}
         </div>
       </div>
     </section>
